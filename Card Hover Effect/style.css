@@ -58,7 +58,7 @@ p.small {
   font-family: courier, sans;
 }
 
-.card1 {
+.card {
   display: block;
   position: relative;
   max-width: 262px;
@@ -70,7 +70,7 @@ p.small {
   z-index: 0;
   overflow: hidden;
 }
-.card1:before {
+.card:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -84,15 +84,15 @@ p.small {
   transform-origin: 50% 50%;
   transition: transform 0.25s ease-out;
 }
-.card1:hover:before {
+.card:hover:before {
   transform: scale(21);
 }
 
-.card1:hover p {
+.card:hover p {
   transition: all 0.3s ease-out;
   color: rgba(255, 255, 255, 0.8);
 }
-.card1:hover h3 {
+.card:hover h3 {
   transition: all 0.3s ease-out;
   color: #ffffff;
 }
